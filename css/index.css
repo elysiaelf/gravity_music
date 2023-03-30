@@ -1,8 +1,43 @@
-.main {
-  float: left;
+* {
+  margin: 0;
+  padding: 0;
 }
-.main .div {
-  width: 100px;
-  height: 200px;
-  background-color: pink;
+.main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+.main > div {
+  height: 100vh;
+  background-color: #c5e8f6;
+}
+.main .tab {
+  width: 50px;
+  height: 100vh;
+}
+.main .list {
+  width: 25vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.main .list > div {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  flex-grow: 1;
+  background-color: #ecf2f8;
+  border-radius: 20px 0 0 20px;
+  border-right: 1px solid #e2e2e2;
+}
+.main .content {
+  height: 100vh;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+.main .content > div {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  flex-grow: 1;
+  background-color: #f3f9fc;
 }
